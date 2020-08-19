@@ -13,7 +13,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Dagmar Lupínková</title>
+        <title>Advokátka Mgr. Dagmar Lupínková</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="právnické služby - advokátka Dagmar Lupínková"/>
+        <meta name="description" content="Brandýs nad Labem"/>
+      <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>            
         <link href="./static/Navbar.module.css" rel="stylesheet"/>
       </Head>
       <Navbar/>

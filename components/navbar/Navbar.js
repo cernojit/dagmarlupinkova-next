@@ -47,8 +47,8 @@ class Navbar extends Component {
 	render(){
 		return(
 			<nav className="nav-tach dt dt--fixed w-100 border-box ph4 pa3 pa0-ns ph6-ns" >
-				<a className="icon dtc v-mid link w-20 w-25-ns tc tl-ns mb2 mb0-ns" href="#" title="Home">
-			    <img src='./images/nav_icon.svg' id="icon" className="dib br-100" alt="Lupínková"/>
+				<a className="icon dtc v-mid w-20 w-25-ns tc tl-ns mb2 mb0-ns" href="/" title="Home">
+			    <img src='./images/nav_icon.svg' id="logo"  alt="Lupínková"/>
 			  </a>
 			  
 			  <div id="menu" className="static-ns absolute mt0 mt0-ns pa0-ns left-100 db dtc-ns v-mid w-40 w-100-ns w-75-ns h-80 tr">
