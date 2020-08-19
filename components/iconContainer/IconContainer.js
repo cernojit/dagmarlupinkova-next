@@ -3,11 +3,11 @@ import React from 'react'
 const IconContainer = () => {
    const iconClass = "flex center tc";
    const iconImg = "w-20-m center w-50-ns w-100";
-   const iconDiv = "fl center w-100 w-20-l pa2 pb3-m pb3 mb4 iconbar";
+   const iconDiv = "fl center w-100 w-20-l pa3 pb3-m pb3 mb4-s iconbar";
    const text = "center tc icons f5 fw8"
 
 	return(
-		<div className="icon-container b--solid ba ph6-ns pa6" style={{backgroundImage: "linear-gradient(90deg,#f2f2f2 0,#e6e6e6)"}}>
+		<div className="icon-container b--solid ba ph6-ns pa6">
          <div className="v-mid center cf ph5-ns ">
          	<div className={iconDiv + "pt5-s"} >
                <div className={iconClass}>
