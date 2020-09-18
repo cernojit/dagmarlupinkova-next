@@ -16,10 +16,10 @@ const ContactSection = () => {
           	</div>
 	        </div>
 				<div className="cf ph2-ns pa2">
-					<div className="fl w-100 w-50-ns w-60-m pr5-ns pb4">
+					<div className="fl w-100 w-60-ns w-60-m pr5-ns pb4">
 	        	<Form/>
 	       	</div>
-					<div className="fl w-100 w-50-ns w-40-m  ">
+					<div className="fl w-100 w-40-ns w-40-m  ">
 	        	<ContactInfo/>
 		      </div>
 				</div>

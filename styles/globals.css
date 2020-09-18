@@ -103,7 +103,9 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    padding: 12% 0
+    padding: 12% 0;
+    height: 700px
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -146,6 +148,17 @@ img {
   }
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.link:hover{
+  text-decoration: underline;
+  color: #555;
+}
+
 .btn {
     display: inline-block;
     margin-bottom: 0;
@@ -154,7 +167,6 @@ img {
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
-    background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
     padding: 10px 14px;
@@ -167,47 +179,42 @@ img {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #8b62ff;
-    border-color: #8b62ff
-}
-
-.btn-primary:focus {
-    color: #fff;
-    background-color: #652fff;
-    border-color: #3b00e2
-}
-
-.btn-primary,
-.btn-primary:hover {
-    background-image: -webkit-linear-gradient(left, rgb(142,23,24), rgb(113,0,254));
-    background-image: -o-linear-gradient(left, rgb(142,23,24) 0, rgb(113,0,254) 100%);
-    background-image: linear-gradient(90deg, #8b62ff 0, #3b1bff);
+    border:none;
+    background: -webkit-linear-gradient(left, #8057FB, #5939FB);
+    background: -o-linear-gradient(left, #8057FB 0, #5939FB 100%);
+    background: linear-gradient(94.41deg, #8057FB -3.71%, #5939FB 99.22%);
     background-repeat: repeat-x;
+    color: #fff;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF8B62FF", endColorstr="#FF3B1BFF", GradientType=1)
 }
 
+.btn-primary:hover {
+  background: #5939FB;
+  border: none;
+}
+
 .btn-lg {
-    padding: 12px 25px;
+    padding: 12px 30px;
     font-size: 19px;
     line-height: 1.33333;
 }
 
 .icon-container {
   border-color: #eee;
-  background-image: linear-gradient(90deg,#f2f2f2 0,#e6e6e6)
+  background: #e6e6e6
 }
 
 .icons {
-  margin-top: 10px;
+  margin: 0;
+  margin-top: 20px;
   font-size: 15px;
   font-weight: bold;
-  width: 100%
+  width: 100%;
 }
 
 
 .iconbar {
-  padding: 0px 0px 0px 0;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -216,8 +223,103 @@ img {
   min-height: 50px;
 }
 
+.icon-btn {
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 0;
+  outline: none;
+  background: #e6e6e6
+}
+
+.icon-btn:hover {
+  cursor: pointer
+}
+
+#myModal {
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+  padding-top: 100px;
+  top:0;
+  left: 0;
+  z-index: 1; 
+  background-color: rgba(0,0,0,0.4)
+}
+
+.modal-content {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: white;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatetop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
 .hidden {
   display: none!important;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:800px; -webkit-opacity:0} 
+  to {top:0; -webkit-opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:800px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@media screen and (max-width: 800px) {
+  /* start of phone styles */
+  .item:hover {
+    transform: none;
+  }
+  .item {
+    transform: none;
+  }
+  #myModal {
+    padding-top: 50%;
+    height: 120%;
+  }
+  .modal-content {
+    height: auto;
+    width: 90%;
+    padding: 3em;
+    position: relative;
+    margin: auto;
+  }
+  .modal-content ul {
+    padding: 0px;
+  }
+}
+
+input:focus ,textarea:focus {
+  outline-color: #555;
 }
 
 .alert {
