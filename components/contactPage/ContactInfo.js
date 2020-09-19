@@ -13,13 +13,13 @@ const ContactInfo = () => {
       </div>
   
       <div className="mt4">
-          <p><a className="no-underline" href='+420 '>+420 XXX XXX XXX</a></p>
+          <p><a className="no-underline" href='tel: +420-777-617-485 '>+420 777 617 485</a></p>
       </div>
       <div className="mt4">
           <p><a className="no-underline" href='mailto: advokatka@lupinkova.cz'>advokatka@lupinkova.cz</a></p>
       </div>
       <div className="mt4">
-          <p>ID datové schránky: 1234567890</p>
+          <p>ID datové schránky: b87gyv6</p>
       </div>
   	</div>
     )

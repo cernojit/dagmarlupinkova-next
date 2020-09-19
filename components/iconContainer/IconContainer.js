@@ -71,10 +71,9 @@ const IconContainer = () => {
    const iconDiv = "dtc-ns fl v-mid center w-100 w-20-l pa3 pa3-ns pt3-ns mb4-s iconbar";
    const text = "center tc icons f5 fw8"
 
-   const changeVisibility = (index) => {
-      console.log('clicked but')
+   const changeVisibility = ( index) => {
       if(display === 'none'){
-         setPosition(0)
+         setPosition(0);
          setDisplay('block')
          setContent(index)
       } else {
@@ -83,6 +82,12 @@ const IconContainer = () => {
       }
    };
 
+   const escFunction = (e) => {
+      if (e.key !== "Escape") return;
+      setPosition(800);
+      setDisplay('none')
+   }
+
    React.useEffect(()=>{
       window.onclick = function(event) {
         if (event.target == document.getElementById("myModal")) {
@@ -90,7 +95,17 @@ const IconContainer = () => {
                setDisplay('none')
            }
       }
+      document.addEventListener("keydown", escFunction, false);
+      return () => {
+         document.removeEventListener("keydown", escFunction, false);
+      };
    })
+
+   // const onEscKeyDown = e => {
+   //  if (e.key !== "Escape") return;
+   //  setPosition(800);
+   //    setDisplay('none')
+   // };
 
 	return(
 		<div className="icon-container b--solid ba ph6-ns pa5 pa6-ns dt-ns w-100 h-80-ns">
@@ -150,8 +165,9 @@ const IconContainer = () => {
                </button>
             </div>
 	     </div>
-        <div id="myModal" className="popup w-100 pa2 bg--white" style={{display:`${display}`}}>
-            <div className="modal-content" >
+        <div id="myModal" className=" w-100 pa2 bg--white" 
+         style={{display: `${display}`}}>
+            <div className="modal-content" id="modal">
             <div className="close " onClick={changeVisibility}>X</div>
                <h1 className="tc ttu w-100 fw9 pb0-ns v-mid mt4-ns mt2 pa2-ns pa2">{items[content].title}</h1>
                <div className=" w-80-ns w-100 tl db center lh-copy pa2-ns pa0 mb4-ns">

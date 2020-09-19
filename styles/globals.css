@@ -255,12 +255,12 @@ img {
   position: relative;
   border: 1px solid grey;
   border-radius: 15px;
-  background-color: white;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.6s;
-    animation-name: animatetop;
+  background-color: white;/*
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.6s;
+  animation-name: animatetop;
   animation-duration: 0.5s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out;*/
 }
 
 .hidden {
@@ -284,7 +284,7 @@ img {
 }
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
+/*@-webkit-keyframes animatetop {
   from {top:800px; -webkit-opacity:0} 
   to {top:0; -webkit-opacity:1}
 }
@@ -292,7 +292,7 @@ img {
 @keyframes animatetop {
   from {top:800px; opacity:0}
   to {top:0; opacity:1}
-}
+}*/
 
 @media screen and (max-width: 800px) {
   /* start of phone styles */
@@ -302,12 +302,13 @@ img {
   .item {
     transform: none;
   }
+
   #myModal {
     padding-top: 50%;
     max-height: 100vh;
     overflow-y: auto;
   }
-  
+
   .modal-content {
     height: auto;
     width: 90%;
@@ -318,6 +319,10 @@ img {
   .modal-content ul {
     padding: 0px;
   }
+}
+
+textarea {
+  box-shadow: none;
 }
 
 input:focus ,textarea:focus {
