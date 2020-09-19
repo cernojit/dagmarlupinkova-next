@@ -12,5 +12,18 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tachyons": "^4.12.0"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cernojit/dagmarlupinkova-next.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cernojit/dagmarlupinkova-next/issues"
+  },
+  "homepage": "https://github.com/cernojit/dagmarlupinkova-next#readme"
 }
