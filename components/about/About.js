@@ -15,7 +15,7 @@ const About = () => {
 							<p>Samostatná advokátka vykonávající generální advokátní praxi od 1.1.2000 
 							se zaměřením zejména na právo rodinné, občanské, právní vztahy 
 							k nemovitostem včetně sepisování smluv a zajištění advokátních úschov, 
-							insolvenční právo a trestní právo</p>
+							insolvenční právo a trestní právo.</p>
 						</div>
 						<div className="mt4">
 							<p>Absolventka Karlovy Univerzity v Praze.</p>

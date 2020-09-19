@@ -304,8 +304,10 @@ img {
   }
   #myModal {
     padding-top: 50%;
-    height: 120%;
+    max-height: 100vh;
+    overflow-y: auto;
   }
+  
   .modal-content {
     height: auto;
     width: 90%;
