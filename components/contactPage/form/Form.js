@@ -1,4 +1,7 @@
-import React, {Component} from 'react'
+import React, {Component, useEffect} from 'react';
+import emailjs from 'emailjs-com';
+import apiKeys from '../../../apikeys.js'
+
 
 class Form extends Component {
 	constructor(props) {
@@ -46,7 +49,6 @@ class Form extends Component {
 	validate = () => {
 		let isValid = true;
 		Object.entries(this.state.valid).forEach(([key, value]) => {
-			console.log(key, value)
 			console.log(document.getElementById(key))
 			if (!value) {
 				isValid = false;
@@ -58,25 +60,23 @@ class Form extends Component {
 
 	onButtonClick = (event) => {
 		event.preventDefault();
+		
 		const isValid = this.validate();
 		if (!isValid){
 			document.getElementById('alert').classList.remove("hidden");	
 		} else if (isValid && !this.state.checkBox){
 			document.getElementById('hidden-after').classList.add("hidden");
     	document.getElementById('hidden-before').classList.remove("hidden");
-			fetch('https://apologetic-pylon-95577.herokuapp.com/send', {
-		  		method: 'post',
-		  		headers: {'Content-Type': 'application/json'},
-		  		body: JSON.stringify({
-		  			fname: this.state.field.fname,
-		  			email: this.state.field.email,
-		  			message: this.state.field.message
-		  		})
-		  	})
-		  	.then(response => response.json())
-		  	.then(console.log('Email should be sent'))
-		  	.then(this.handleClearForm())
-		  	.catch(err => console.log(err))	
+    	emailjs.send(apiKeys.SERVICE_ID, apiKeys.TEMPLATE_ID, this.state.field, apiKeys.USER_ID)
+					.then(result => {
+						document.getElementById('hidden-after').classList.add("hidden");
+			    	document.getElementById('hidden-before').classList.remove("hidden");
+			    	this.handleClearForm();
+					},
+					error => {
+						alert( 'Něco se pokazilo, prosím zadejte znovu',error.text)
+					})
+					
 		} else if(isValid  && this.checkBox){
 			document.getElementById('hidden-after').classList.add("hidden");
     	document.getElementById('hidden-before').classList.remove("hidden");
@@ -143,7 +143,7 @@ class Form extends Component {
 	        	</div>
 	        	<div className="mt3 ">
 	        	 <label className="pa0 ma0 lh-copy f6 pointer hidden">
-	        	 	<input type="checkbox" onChange = {this.handleChange}/> Remember me
+	        	 	<input type="checkbox" onChange = {this.handleChange}/> Souhlasím se zpracováním osobních údajů.
 	        	 </label>
 	        	</div>
 	        	<div>
@@ -156,7 +156,7 @@ class Form extends Component {
 				    </div>
       		</fieldset>
       		<div id="hidden-before" className="hidden mt4">
-						<div className="alert alert-success " role="alert">Vaše zpráva byla úspěšně odeslána
+						<div className="alert alert-success " role="alert">Vaše zpráva byla úspěšně odeslána!
 						</div>
       		</div>
       </form>

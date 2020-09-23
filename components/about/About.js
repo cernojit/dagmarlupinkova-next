@@ -21,10 +21,10 @@ const About = () => {
 							<p>Absolventka Karlovy Univerzity v Praze.</p>
 	        	</div>  
 	        	<div className="mt4">
-							<p>Do prosince 2018 členka <b>Unie rodinných advokátů.</b></p>
+							<p>Od prosince 2018 členka <b>Unie rodinných advokátů.</b></p>
 	        	</div> 
 	        	<div className="mt4">
-							<p>V seznamu advokátů u Čerské advokátní komory zapsána pod ev.č. 08621.</p>
+							<p>V seznamu advokátů u České advokátní komory zapsána pod ev.č. 08621.</p>
 	        	</div> 
 	        	<div className="mt4">
 							<a>Odměna advokáta za poskytnuté právní služby je 
