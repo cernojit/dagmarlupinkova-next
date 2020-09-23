@@ -1,6 +1,5 @@
 import React, {Component, useEffect} from 'react';
 import emailjs from 'emailjs-com';
-import apiKeys from '../../../apikeys.js'
 
 
 class Form extends Component {
@@ -67,7 +66,7 @@ class Form extends Component {
 		} else if (isValid && !this.state.checkBox){
 			document.getElementById('hidden-after').classList.add("hidden");
     	document.getElementById('hidden-before').classList.remove("hidden");
-    	emailjs.send(apiKeys.SERVICE_ID, apiKeys.TEMPLATE_ID, this.state.field, apiKeys.USER_ID)
+    	emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, this.state.field, process.env.USER_ID)
 					.then(result => {
 						document.getElementById('hidden-after').classList.add("hidden");
 			    	document.getElementById('hidden-before').classList.remove("hidden");
