@@ -2,6 +2,7 @@ import React, {Component, useEffect} from 'react';
 import emailjs from 'emailjs-com';
 
 
+
 class Form extends Component {
 	constructor(props) {
 		super(props);
@@ -64,8 +65,7 @@ class Form extends Component {
 		if (!isValid){
 			document.getElementById('alert').classList.remove("hidden");	
 		} else if (isValid && !this.state.checkBox){
-			document.getElementById('hidden-after').classList.add("hidden");
-    	document.getElementById('hidden-before').classList.remove("hidden");
+			console.log(process.env.USER_ID, process.env.TEMPLATE_ID)
     	emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, this.state.field, process.env.USER_ID)
 					.then(result => {
 						document.getElementById('hidden-after').classList.add("hidden");
@@ -73,7 +73,7 @@ class Form extends Component {
 			    	this.handleClearForm();
 					},
 					error => {
-						alert( 'Něco se pokazilo, prosím zadejte znovu',error.text)
+						alert( 'Něco se pokazilo, zkuste prosím znovu',error.text)
 					})
 					
 		} else if(isValid  && this.checkBox){

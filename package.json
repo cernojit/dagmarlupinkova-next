@@ -9,6 +9,7 @@
   "author": "cernojit <cernojit@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.3",
     "next": "^9.5.3",
     "react": "^16.13.1",
