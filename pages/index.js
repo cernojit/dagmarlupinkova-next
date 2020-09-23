@@ -21,6 +21,7 @@ export default function Home() {
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>            
         <link href="./static/Navbar.module.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="./favicon.ico" />
       </Head>
       <Navbar/>
       <ImgContainer/> 
