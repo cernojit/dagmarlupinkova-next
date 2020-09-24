@@ -34,7 +34,7 @@ const About = () => {
 	        	</div>   
 	        	<div className="mt4 tc tl-ns">
 	        		<a href="http://www.uracr.cz/" target="_blank">
-	        			<img src="./images/ura_logo.jpg" id="ura" height="80px"/>
+	        			<img src="./images/URA_logo.jpg" id="ura" height="80px"/>
 	        		</a>
 	        	</div>
 	        </div>      
