@@ -32,6 +32,11 @@ const About = () => {
 							 <a className="link" href="http://www.akjamu.cz/_media/files/w8bir0x90u.pdf" target="_blank"> 
 							 Ministerstva spravedlnosti č. 177/1996 Sb., advokátní tarif.</a>
 	        	</div>   
+	        	<div className="mt4 tc tl-ns">
+	        		<a href="http://www.uracr.cz/" target="_blank">
+	        			<img src="./images/ura_logo.jpg" id="ura" height="80px"/>
+	        		</a>
+	        	</div>
 	        </div>      
 	    </div>
 		</div>

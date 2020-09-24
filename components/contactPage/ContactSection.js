@@ -5,11 +5,11 @@ import Map from './map/Map'
 
 const ContactSection = () => {
 	return(
-		<div className="w-100 pb5" id="kontakt">
+		<div className="w-100 pb5" >
 			<div className="static-ns center w-100 pa6-ns bb0 center pa4 " >
 					<div className="w-100-ns w-100 pa2">
-		        <div className="w-100 pa4 ph0">
-	    	      <h2>Kontakt</h2>
+		        <div className="w-100 pa4 ph0" >
+	    	      <h2 id="kontakt">Kontakt</h2>
 	    	     </div>
 	    	     <div className="w-100 w-100-m w-100-ns">
           		<Map/>

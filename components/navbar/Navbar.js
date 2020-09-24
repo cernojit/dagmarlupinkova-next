@@ -53,8 +53,8 @@ class Navbar extends Component {
 			  
 			  <div id="menu" className="static-ns absolute mt0 mt0-ns pa0-ns left-100 db dtc-ns v-mid w-40 w-100-ns w-75-ns h-80 tr">
 			    <a className="link tr tl-ns f8-ns db dib-ns mr4 mr4-ns mt4" href="#home" title="Home" onClick={this.hideNav}>Domů</a>
-			    <a className="link tr tl-ns f8-ns db dib-ns mr4 mr4-ns" href="#info" title="About" onClick={this.hideNav}>Informace</a>
-			    <a className="link tr tl-ns f8-ns db dib-ns mr4 mr0-ns mb4-ns mb3" href="#kontakt" title="Contact" onClick={this.hideNav}>Kontakt</a>
+			    <a className="link tr tl-ns f8-ns db dib-ns mr4 mr4-ns mt3" href="#info" title="About" onClick={this.hideNav}>Informace</a>
+			    <a className="link tr tl-ns f8-ns db dib-ns mr4 mr0-ns mb4-ns mb4 mt3" href="#kontakt" title="Contact" onClick={this.hideNav}>Kontakt</a>
 			  </div>
 			  <a href="/#" id="menu-btn" className="dtc tr v-mid dn-ns w-20 pa0 pa0-ns tc" >
 			  <button type="button" className="white ba b--white bg-white" onClick={this.handleClickMenu}>
