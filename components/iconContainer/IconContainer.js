@@ -42,7 +42,7 @@ const items = [
             <li>zástavní práva a věcná břemena</li>
             <li>podání návrhů na vklad vlastnických a jiných práv do katastru nemovitostí</li>
          </ul>
-   }
+   },
    {name: "insolvence",
       title: "Insolvence",
       desc: 
