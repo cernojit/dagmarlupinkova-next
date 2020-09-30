@@ -32,6 +32,17 @@ const items = [
             <li>práva spotřebitele</li>
          </ul>
    },
+   {name: "nemovitosti",
+      title: "Práva k nemovitostem",
+      desc: 
+         <ul>
+            <li>smlouvy kupní včetně smlouvy o advokátní úschově peněžních prostředků a listin</li>
+            <li>smlouvy darovací</li>
+            <li>smlouvy o vypořádání spoluvlastnických vztahů</li>
+            <li>zástavní práva a věcná břemena</li>
+            <li>podání návrhů na vklad vlastnických a jiných práv do katastru nemovitostí</li>
+         </ul>
+   }
    {name: "insolvence",
       title: "Insolvence",
       desc: 
@@ -45,17 +56,6 @@ const items = [
       desc: 
          <ul>
             <li>zastupování poškozených v trestním řízení včetně uplatnění nároku na náhradu škody v trestním i občanskoprávním řízení</li>
-         </ul>
-   },
-   {name: "nemovitosti",
-      title: "Práva k nemovitostem",
-      desc: 
-         <ul>
-            <li>smlouvy kupní včetně smlouvy o advokátní úschově peněžních prostředků a listin</li>
-            <li>smlouvy darovací</li>
-            <li>smlouvy o vypořádání spoluvlastnických vztahů</li>
-            <li>zástavní práva a věcná břemena</li>
-            <li>podání návrhů na vklad vlastnických a jiných práv do katastru nemovitostí</li>
          </ul>
    }
 
