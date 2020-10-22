@@ -107,44 +107,38 @@ img {
     height: 700px
 
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .image {
-    /*background: url('/images/ImgContainer.png');*/
-    background-image: url('/images/ImgContainer-small.png')
+    background-image: url('/images/ImgContainer-small.jpg')
   }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .image {
-    /*background: url('/images/ImgContainer.png');*/
-    background-image: url('/images/ImgContainer-medium.png')
+    background-image: url('/images/ImgContainer-medium.jpg')
   }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .image {
-    /*background: url('/images/ImgContainer.png');*/
-    background-image: url('/images/ImgContainer-medium-large.png')
+    background-image: url('/images/ImgContainer-medium-large.jpg')
   }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .image {
-    /*background: url('/images/ImgContainer.png');*/
-    background-image: url('/images/ImgContainer-large.png')
+    background-image: url('/images/ImgContainer-large.jpg')
   }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .image {
-    /*background: url('/images/ImgContainer.png');*/
-    background-image: url('/images/ImgContainer.png')
+    background-image: url('/images/ImgContainer.jpg')
   }
 }
 

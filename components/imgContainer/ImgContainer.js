@@ -1,5 +1,4 @@
 import React from 'react';
-import './imgContainer.module.css'
 
 const ImgContainer = () => {
 	return(
