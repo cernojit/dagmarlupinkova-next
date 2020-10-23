@@ -18,8 +18,10 @@ export default function Home() {
         <meta name="description" content="právnické služby - advokátka Dagmar Lupínková"/>
         <meta name="description" content="Brandýs nad Labem"/>
         <meta name="robots" content="index, follow"/>
-        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>            
+        <meta name="description" content="Samostatná advokátka vykonávající generální advokátní praxi od 1.1.2000 
+              se zaměřením zejména na právo rodinné, občanské, právní vztahy 
+              k nemovitostem včetně sepisování smluv a zajištění advokátních úschov, 
+              insolvenční právo a trestní právo."/>            
         <link href="./static/Navbar.module.css" rel="stylesheet"/>
         <link rel="shortcut icon" href="./favicon.ico" />
       </Head>
